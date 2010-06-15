@@ -1,0 +1,5 @@
+{
+    "name": "Highrise Callflow",
+    "author": "Will Tran <wtran@twilio.com>",
+    "description": "Applet to redirect known Highrise contacts and new contacts to their correct flow in a call flow."
+}

@@ -1,0 +1,6 @@
+{
+    "name" : "Highrise Flow",
+    "author" : "Will Tran <wtran@twilio.com>",
+    "description" : "If incoming number is in Highrise, perform selected action otherwise do other action.",
+    "type" : "voice"
+}
