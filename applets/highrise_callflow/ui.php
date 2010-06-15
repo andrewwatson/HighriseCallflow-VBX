@@ -35,7 +35,7 @@ span[class$="err"] { color:red; }
         </div>
 
         <div style="line-height:30px;">
-            <button class="inline-button submit-button highrise_test_creds_btn" style="margin-top:5px; vertical-align:center;">
+            <button class="inline-button submit-button" style="margin-top:5px; vertical-align:center;">
                 <span>Test</span>
             </button>
             <div class="system_msg"></div>
@@ -55,3 +55,7 @@ span[class$="err"] { color:red; }
         <?php echo AppletUI::dropZone('nonhighrise_next', 'Drop item here'); ?>
     </div>
 </div>
+
+<script>
+var base_url = '<?php echo base_url() ?>';
+</script>

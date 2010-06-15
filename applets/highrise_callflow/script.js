@@ -24,7 +24,7 @@ $(document).ready(function() {
         if(errors.length == 0) {
             $('div.system_msg', app).html('<a class="ajax_loader"></a> Testing your credentials.');
             $.post(
-                base_url + 'config/Highrise-VBX?op=test_credentials',
+                base_url + 'config/HighriseCallflow-VBX?op=test_credentials',
                 { url:url_el.val(), token:token_el.val(), password:password_el.val(), timezone:timezone },
                 function(resp) {
                     try {
@@ -50,7 +50,8 @@ $(document).ready(function() {
         }
     }
 
-    $('button.highrise_test_creds_btn').live('click', function(e) {
+    var app = $('.vbx-applet.highrise_callflow_app');
+    $('button.submit-button', app).live('click', function(e) {
         var instance = $(this).parent().parent().parent();
         submitTestHighriseCredForm(instance);
         e.preventDefault();

@@ -1,5 +1,5 @@
 <?php
-include('plugins/Highrise-VBX/highrise.php');
+include('plugins/HighriseCallflow-VBX/highrise.php');
 
 $CI =& get_instance();
 $flow = @AppletInstance::getFlow();

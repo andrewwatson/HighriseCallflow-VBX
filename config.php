@@ -139,7 +139,7 @@ div.system_msg > * { vertical-align:middle; }
 </style>
 
 <div class="vbx-content-menu vbx-content-menu-top">
-    <h2 class="vbx-content-heading">Highrise Settings</h2>
+    <h2 class="vbx-content-heading">Highrise Callflow Settings</h2>
 </div>
 
 <div class="vbx-applet" style="background-color:white;">
