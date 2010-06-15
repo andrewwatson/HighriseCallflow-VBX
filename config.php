@@ -148,7 +148,7 @@ div.system_msg > * { vertical-align:middle; }
         <p>Please enter your access info so we can update Highrise with incoming messages.</p>
 
         <div class="vbx-input-container input" style="margin-bottom:10px;">
-            <label>Highrise URL - The URL to your Highrise which is something like http or https://yoursite.highrisehq.com.</label>
+            <label>Highrise URL - The URL to your Highrise which is something like https://yoursite.highrisehq.com.</label>
             <input name="highrise_url" class="medium" type="text" value="<?php echo @$highrise_callflow_user->url ?>" />
             <span class="highrise_url_err"></span>
         </div>

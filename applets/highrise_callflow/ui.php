@@ -17,7 +17,7 @@ span[class$="err"] { color:red; }
         <p>It looks like you are setting up for the first time. Please enter your access credentials so we can sync with Highrise.</p>
 
         <div class="vbx-input-container input" style="margin-bottom:10px;">
-            <label>Highrise URL - The URL to your Highrise which is something like https or http://yoursite.highrisehq.com.</label>
+            <label>Highrise URL - The URL to your Highrise which is something like https://yoursite.highrisehq.com.</label>
             <input name="highrise_url" class="medium" type="text" value="" />
             <span class="highrise_url_err"></span>
         </div>
