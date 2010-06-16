@@ -1,0 +1,6 @@
+Highrise Callflow OpenVBX Plugin
+by Will Tran <wtran@twilio.com>
+June 16, 2010
+-----
+
+This will redirect the caller based on if they are in Highrise or not.
