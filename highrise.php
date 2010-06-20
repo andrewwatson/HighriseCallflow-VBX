@@ -26,13 +26,13 @@ function highrise_client($path, $method='GET', $xml = '')
             break;
 
         case 'POST':
-            curl_setopt($ch, CURLOPT_HTTPHEADER, Array("Content-Type: text/xml"));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: text/xml"));
             curl_setopt($ch, CURLOPT_POST, TRUE);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
             break;
 
         case 'PUT':
-            curl_setopt($ch, CURLOPT_HTTPHEADER, Array("Content-Type: text/xml"));
+            curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: text/xml"));
             curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
             break;
