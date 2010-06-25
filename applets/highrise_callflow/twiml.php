@@ -1,8 +1,11 @@
 <?php
-include('plugins/HighriseCallflow-VBX/highrise.php');
-
 $CI =& get_instance();
+$plugin = OpenVBX::$currentPlugin;
+$plugin = $plugin->getInfo();
+$plugin_url = base_url().'plugins/'.$plugin['dir_name'];
 $flow = @AppletInstance::getFlow();
+
+include($plugin['plugin_path'].'/highrise.php');
 
 $highrise_callflow_user = $CI->db->get_where('plugin_store', array('key' => 'highrise_callflow_user'))->row();
 $highrise_callflow_user = json_decode($highrise_callflow_user->value);
