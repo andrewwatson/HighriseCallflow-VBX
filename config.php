@@ -1,7 +1,12 @@
 <?php
 $CI =& get_instance();
+$plugin = OpenVBX::$currentPlugin;
 $op = @$_REQUEST['op'];
 $highrise_callflow_user = PluginData::get('highrise_callflow_user');
+
+if(!function_exists('json_encode')) {
+    include($plugin->plugin_path.'/vendors/json.php');
+}
 
 if($op == 'test_credentials') 
 { // {{{
@@ -30,9 +35,6 @@ if($op == 'test_credentials')
         ));
         $results = curl_exec($ch);
         $ch_info = curl_getinfo($ch);
-
-        error_log('RESULTS: '.json_encode($results));
-        error_log('INFO: '.json_encode($ch_info));
 
         if(!$results) {
             $curl_error = curl_error($ch);
@@ -181,6 +183,6 @@ div.system_msg > * { vertical-align:middle; }
 var base_url = '<?php echo base_url() ?>';
 </script>
 
-<?php $CI->template->add_js('plugins/HighriseCallflow-VBX/config.js') ?>
+<?php OpenVBX::addJS('config.js') ?>
 
 <?php endif; ?>
