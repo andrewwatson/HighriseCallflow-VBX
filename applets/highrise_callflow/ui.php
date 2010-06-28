@@ -1,7 +1,7 @@
 <?php
 $CI =& get_instance();
 $plugin_info = $plugin->getInfo();
-$highrise_callflow_user = PluginStore::get('highrise_callflow_user');
+$highrise_callflow_user = PluginData::get('highrise_callflow_user');
 ?>
 <style>
 a.ajax_loader { background:url(<?php echo base_url() ?>assets/i/ajax-loader.gif); display:inline-block; width:16px; height:11px; vertical-align:middle; }
