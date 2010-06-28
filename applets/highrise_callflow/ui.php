@@ -1,5 +1,6 @@
 <?php
 $CI =& get_instance();
+$plugin_info = $plugin->getInfo();
 $highrise_callflow_user = PluginStore::get('highrise_callflow_user');
 ?>
 <style>
@@ -58,4 +59,5 @@ span[class$="err"] { color:red; }
 
 <script>
 var base_url = '<?php echo base_url() ?>';
+var plugin_dir = '<?php echo $plugin_info['dir_name'] ?>';
 </script>

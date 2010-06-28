@@ -184,6 +184,7 @@ div.system_msg > * { vertical-align:middle; }
 <script>
 var base_url = '<?php echo base_url() ?>';
 var plugin_url = '<?php echo $plugin_url ?>';
+var plugin_dir = '<?php echo $plugin['dir_name'] ?>';
 </script>
 
 <?php OpenVBX::addJS('config.js') ?>
